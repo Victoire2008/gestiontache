@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de contact</title>
+    <style>
+    body{
+     font-style: Arial,sans-serif; 
+    }
+    form{
+      width: 350px;
+      margin: 50px auto ;
+      padding: 25px;
+      background-color: rgb(197, 102, 168);
+      border-radius: 12px;
+    }
+    form h2{
+     text-align: center;
+     margin-bottom: 30px;
+     font-style: oblique;
+     font-weight: bolder;
+     color: white;
+
+    }
+    input ,textarea{
+
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 15px;
+        border: 1px solid black;
+        border-radius: 10px;
+        outline:none;
+        transition: 0,3s;
+    }
+    label{
+        font-style: oblique;
+        font-weight: bolder;
+        margin-bottom: 50px;
+        color: white;
+    }
+    button{
+        width: 100%;
+        padding: 12px;
+        background-color: rgb(148, 31, 95);
+        border: none;
+        border-radius: 8px;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+         <h2>Contacts</h2>
+
+        <label for="name">Nom Complet :</label>
+        <input type="text" name="nom" id="nom" required/>
+
+        <label for="email">e-mail :</label>
+        <input type="email" name="email" id="email" required/>
+
+        <label for="message">Message :</label>
+     <textarea name="message" id="message"></textarea>
+   
+        <button type="submit">Envoyer</button>
+   
+
+    </form>
+</body>
+</html>
